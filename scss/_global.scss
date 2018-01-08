@@ -100,3 +100,9 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: $primary;
 }
+.fsf-body {
+  .fsf-highlight{
+    font-style: italic;
+  }
+
+}
