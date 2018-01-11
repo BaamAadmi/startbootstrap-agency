@@ -12,6 +12,13 @@
     @include heading-font;
   }
   .navbar-brand {
+    font-family: $cinematica-bold!important;
+    font-size: 2em!important;
+    img {
+      padding: 7px 14px;
+    }
+    display: flex;
+    align-items: center;
     color: $primary;
     @include script-font;
     &.active,
@@ -40,7 +47,7 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 25px;
+    padding-top: 0;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;

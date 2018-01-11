@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "description": "A Website created from StrartBootsrtap template",
   "license": "MIT",
-  "author": "Sudeep",
+  "author": "Start Bootstrap Sudeep",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
   "scripts": {
     "start":"gulp dev"
   },

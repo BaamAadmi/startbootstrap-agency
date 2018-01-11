@@ -1,11 +1,15 @@
 /*!
  * Start Bootstrap - Free String Films v1.0.0 ()
- * Copyright 2013-2018 Sudeep
+ * Copyright 2013-2018 Start Bootstrap Sudeep
  * Licensed under MIT (https://github.com/BlackrockDigital/freestringfilms/blob/master/LICENSE)
  */
+@font-face {
+  font-family: 'cinematica-bold';
+  src: url("../vendor/cinematica/Cinematografica-Bold-trial.ttf") format("truetype"); }
+
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 p {
   line-height: 1.75; }
@@ -25,7 +29,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
 
 section {
   padding: 100px 0; }
@@ -46,7 +50,7 @@ section {
     padding: 150px 0; } }
 
 .btn {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .btn-xl {
@@ -93,10 +97,16 @@ body {
     color: white;
     border: 0;
     background-color: #00FDFD;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
+    font-family: "cinematica-bold", sans-serif !important;
+    font-size: 2em !important;
+    display: flex;
+    align-items: center;
     color: #00FDFD;
-    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #mainNav .navbar-brand img {
+      padding: 7px 14px; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #00caca; }
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -105,13 +115,13 @@ body {
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: white;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #00FDFD; }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
+    padding-top: 0;
     padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -136,7 +146,6 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/logos/fsf-big.png");
   background-color: #000;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -145,9 +154,18 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  header.masthead video {
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50; }
   header.masthead .intro-text {
     padding-top: 150px;
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    z-index: 60; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -159,7 +177,7 @@ header.masthead {
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Lato', Helvetica, Arial, sans-serif; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -176,7 +194,7 @@ header.masthead {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
+      font-family: 'Lato', Helvetica, Arial, sans-serif; } }
 
 .service-heading {
   margin: 15px 0;
@@ -465,21 +483,21 @@ section#contact {
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
   section#contact :-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
   section#contact ::-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
   section#contact :-ms-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
 
 footer {
   padding: 25px 0;
@@ -488,13 +506,13 @@ footer {
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
   footer ul.quicklinks {
     font-size: 90%;
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Lato', Helvetica, Arial, sans-serif; }
 
 ul.social-buttons {
   margin-bottom: 0; }
@@ -513,3 +531,16 @@ ul.social-buttons {
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #00FDFD; }
+
+#video-landing video {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: -200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50; }
+
+#video-landing h1 {
+  font-size: 3em; }

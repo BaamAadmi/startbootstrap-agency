@@ -1,0 +1,15 @@
+#video-landing {
+	video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: -200px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+  }
+  h1{
+   	font-size: 3em;
+  }
+}
