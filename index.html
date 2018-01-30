@@ -4,8 +4,8 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="We are a Mumbai based studio, one place solution for all your video needs. At Freestrings, We believe in creating a Product with a powerful strategy. A thought provoking, outstanding creative execution that will always increase the value of your brand.">
     <meta name="author" content="Sudeep Rane">
     <meta http-equiv="X-UA-Compatible"
               content="IE=edge" >
@@ -22,18 +22,17 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/agency.min.css" rel="stylesheet">
 
   </head>
 
   <body class="fsf-body" id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand"
             href="javascript:void(0)">
-            <img style="	width: 64px;" src="img/logos/fsf-big.png" alt="FREESTRINGS FILMS">
+            <img style="width: 64px;" src="img/logos/fsf-big.png" alt="FREESTRINGS FILMS">
             FREESTRINGS FILMS
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +42,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">About</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">How to</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Strategy</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -59,24 +58,74 @@
       </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Video section -->
     <header class="masthead">
-      <video autoplay="autoplay" loop="loop" id="bgvid">
-        <source src="data/profile.mp4" type="video/mp4" />
-      </video>
-      <!-- <div class="container">
-        <div class="intro-text">
-          <div class="intro-heading">
-             Let us help you get started with a sneak peek.
-          </div>
-          <a
-            class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-            href="#services">
-            See our profile video
-          </a>
-        </div>
-      </div> -->
+        <div class="video-container">
+
+         </div>
     </header>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row  text-center">
+          <div class="col-lg-12">
+            <h2 class="section-heading text-uppercase">About Us</h2>
+          </div>
+          <div class="row">
+             <p>
+                We are a video production company offering a fully specialised creative service under one roof.
+                Marketing strategists are facing a growing and competitive online landscape where the key is video production, and that is where we make the difference.
+                We deliver powerful storytelling to your desired audiences through the art of the moving images. See our <a class="js-scroll-trigger" href="#services"> services </a>
+
+              </p>
+
+          </div>
+        </div>
+        <div class="row portfolio-items">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://www.youtube.com/watch?v=j9FkRx_1bFY">
+                <div class="portfolio-hover">
+                    <div class="portfolio-caption">
+                          <p class="">
+                            NME one of the leading graffiti artists in India, visits a dharavi local school for "the dharavi project". Enthusiastic children learn the art of calligraphy, sketching and Graffiti. Will it help them come out of the shell and face the world ?
+                          </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/1.png" alt=""></a>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://www.youtube.com/watch?v=oNIvPWxjPNU">
+                <div class="portfolio-hover">
+                  <div class="portfolio-caption">
+                      <p>
+                          Witness how Zake and NME inject colors into a wonderful Shaze concept store in a 1 minute video.
+                      </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/2.png" alt="Colaba"></a>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://www.youtube.com/watch?v=YVq8VmpA5Bw">
+                <div class="portfolio-hover">
+                  <div class="portfolio-caption">
+                      <p>
+                        Catch India's finest BMX Rider PRAVIN HABIB, in this fashion film with urban monkey.
+                      </p>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/3.png" alt="BMX"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Item -->
+    <section style="display:none" class="parallax-section parallax1">
+
+    </section>
     <!-- Services -->
     <section id="services">
       <div class="container">
@@ -97,16 +146,6 @@
             <h4 class="service-heading">Video</h4>
             <p class="text-muted">
                 Our bread and butter. We produce videos in all aspects of digital space.
-            </p>
-          </div>
-          <div style="display:none" class="col-md-3">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-television fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Graphic Design</h4>
-            <p class="text-muted">
-                We give our clients an edge with our eye catching designs.
             </p>
           </div>
           <div class="col-md-4">
@@ -133,59 +172,21 @@
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Things that we are proud of. And there is plenty of space to feature your video <i class="fa fa-smile-o"></i> </h3>
-          </div>
-        </div>
-        <div class="row portfolio-items">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://www.youtube.com/watch?v=j9FkRx_1bFY">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fa fa-youtube-play fa-3x"></i></div>
-                </div><img class="img-fluid" src="img/portfolio/1.png" alt=""></a>
-                <div class="portfolio-caption">
-                    <p class="text-muted">
-                      NME one of the leading graffiti artists in India, visits a dharavi local school for "the dharavi project". Enthusiastic children learn the art of calligraphy, sketching and Graffiti. Will it help them come out of the shell and face the world ?
-                    </p>
-                </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://www.youtube.com/watch?v=oNIvPWxjPNU">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fa fa-youtube-play fa-3x"></i></div>
-                </div><img class="img-fluid" src="img/portfolio/2.png" alt="Colaba"></a>
-                <div class="portfolio-caption">
-                    <p class="text-muted">
-                        Witness how Zake and NME inject colors into a wonderful Shaze concept store in a 1 minute video.
-                    </p>
-                </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://www.youtube.com/watch?v=YVq8VmpA5Bw">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fa fa-youtube-play fa-3x"></i></div>
-                </div><img class="img-fluid" src="img/portfolio/3.png" alt="BMX"></a>
-                <div class="portfolio-caption">
-                    <p class="text-muted">Catch India's finest BMX Rider PRAVIN HABIB &#8203;in this fashion film with urban monkey .&#8203;</p>
-                </div>
-          </div>
-        </div>
-      </div>
+    <!-- Parallax Item -->
+    <section style="display:none" class="parallax-section parallax2">
+
     </section>
+
+
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">How to</h2>
+            <h2 class="section-heading text-uppercase">Strategy</h2>
             <h3 class="section-subheading text-muted">
-                See how a production company works. No <i class="fa fa-rocket"></i> science really!
+                See how a production company works. A quick recipe for your perfect video.
             </h3>
           </div>
         </div>
@@ -261,14 +262,6 @@ After you sign off the brief document and location we will proceed ahead.
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Come work
-                    <br>with us!
-                    <br>
-                   </h4>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
@@ -331,11 +324,11 @@ After you sign off the brief document and location we will proceed ahead.
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
-                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-instagram"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/freestringsfilms">
                   <i class="fa fa-facebook"></i>
                 </a>
               </li>
@@ -347,20 +340,13 @@ After you sign off the brief document and location we will proceed ahead.
             </ul>
           </div>
           <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
+
           </div>
         </div>
       </div>
     </footer>
     <div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog portfolio-modal">
         <div class="modal-content">
           <div class="modal-body">
             <!-- content dynamically inserted -->

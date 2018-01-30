@@ -1,8 +1,20 @@
 // Styling for the portfolio section
 #portfolio {
+   p {
+      margin: 5px;
+      padding: 10px;
+   }
+  .portfolio-items {
+     margin-top: 30px;
+     min-height: 300px;
+  }
+  .section-heading{
+    color: $primary
+  }
   .portfolio-item {
+    padding: 0;
     right: 0;
-    margin: 0 0 15px;
+    margin: 0;
     .portfolio-link {
       position: relative;
       display: block;
@@ -46,6 +58,9 @@
       padding: 25px;
       text-align: center;
       background-color: $white;
+      opacity: 0.5;
+      height: 100%;
+
       h4 {
         margin: 0;
         text-transform: none;

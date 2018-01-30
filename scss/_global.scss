@@ -106,3 +106,60 @@ body {
   }
 
 }
+
+.portfolio-modal{
+   margin: 50px auto;
+
+}
+.parallax-section {
+   padding: 0;
+  .parallax-item {
+      /* The image used */
+      position: relative;
+      min-height: 100vh;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &#parallax1{
+         background-image: url(../img/gallery/1.jpg);
+      }
+      &#parallax2{
+         background-image: url(../img/nucleya.jpg);
+      }
+      .parallax-text{
+          color: $black;
+          position: absolute;
+          right: 2%;
+          top: 10%;
+          width: 50%;
+          background: $steel-white;
+          padding: 5px;
+          font-family: "cinematica-bold", sans-serif !important;
+          font-size: 2em;
+        }
+
+      .caption {
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        width: auto;
+        text-align: center;
+        color: #000;
+        span.border {
+          background-color: #111;
+          color: #fff;
+          padding: 18px;
+          font-size: 15px;
+          letter-spacing: 10px;
+          transition: all linear 0.3s;
+          &:hover{
+            font-size: 16px;
+          }
+        }
+      }
+
+  }
+}

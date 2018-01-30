@@ -1,6 +1,28 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var isMobile = false; //initiate as false
+  // device detection
+  var para1 =  '<div class="parallax-item"  id="parallax1"><div class="parallax-text">'
+  para1 +=  "WE BELIEVE IN CREATING A PRODUCT WITH A POWERFUL STRATEGY. A THOUGHT PROVOKING, OUTSTANDING CREATIVE EXECUTION THAT WILL ALWAYS INCREASE THE VALUE OF YOUR BRAND.​</div></div>";
+  var para2 = '<div class="parallax-item" id="parallax2"> <a href="gallery.html"> <div class="caption"> <span class="border">..more awesome pictures</span> </div> </a> </div>';
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+    var str = '<div class="container"> <div class="intro-text"> <div class="intro-lead-in">At Freestrings, We believe in creating a Product with a powerful strategy. A thought provoking, outstanding creative execution that will always increase the value of your brand. </div><div class="intro-heading text-uppercase"></div> <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> </div> </div>';
+    $(".masthead").addClass("mobile-image").append(str).on("click", function() {
+          // redirect to YouTube
+    });
+    $(".navbar-nav.ml-auto").append('<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a> </li>');
+
+ } else {
+        var videoTag = '<video autoplay  loop="loop" id="bgvid"> <source src="data/profile.mp4" type="video/mp4" /> </video>';
+        $(".masthead .video-container").empty().append(videoTag);
+
+        $(".parallax-section.parallax1").empty().append(para1).show();
+        $(".parallax-section.parallax2").empty().append(para2).show();
+ }
+
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -109,7 +131,8 @@ $('a[href^="https://www.youtube.com"]').on('click', function(e){
 		var vidHeight = 315; // default
 		if ( $(this).attr('data-width') ) { vidWidth = parseInt($(this).attr('data-width')); }
 		if ( $(this).attr('data-height') ) { vidHeight =  parseInt($(this).attr('data-height')); }
-		var iFrameCode = '<iframe width="' + vidWidth + '" height="'+ vidHeight +'" scrolling="no" allowtransparency="true" allowfullscreen="true" src="https://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0" frameborder="0"></iframe>';
+		// var iFrameCode = '<iframe width="' + vidWidth + '" height="'+ vidHeight +'" scrolling="no" allowtransparency="true" allowfullscreen="true" src="https://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0" frameborder="0"></iframe>';
+    var iFrameCode = '<iframe width="100%" height="100%" scrolling="no" allowtransparency="true" allowfullscreen="true" src="https://www.youtube.com/embed/'+  queryVars['v'] +'?rel=0&wmode=transparent&showinfo=0" frameborder="0"></iframe>';
 
 		// Replace Modal HTML with iFrame Embed
 		$('#mediaModal .modal-body').html(iFrameCode);
@@ -122,7 +145,9 @@ $('a[href^="https://www.youtube.com"]').on('click', function(e){
 			newModalWidth += parseInt(modalDialog.css("padding-left")) + parseInt(modalDialog.css("padding-right"));
 			newModalWidth += 'px';
 			// Set width of modal (Bootstrap 3.0)
-		    $(this).find('.modal-dialog').css('width', newModalWidth);
+       var modalHeight = getModalHeight();
+		   $(this).find('.modal-dialog').attr("style","min-width:70%;min-height:"+modalHeight);
+        modalBody.attr("style","height:"+modalHeight);
 		});
 
 		// Open Modal
@@ -140,3 +165,7 @@ $('#mediaModal').on('hidden.bs.modal', function () {
 
 
 })(jQuery); // End of use strict
+
+function getModalHeight(){
+    return "500px";
+}
